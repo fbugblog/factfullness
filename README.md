@@ -1,35 +1,43 @@
-# 数字を、判断の味方に。
-## 『FACTFULNESS』を学ぶ日本語の自習教材
-ニュースに驚いたとき、仕事の数字で迷ったとき。結論の前に、分母と比較対象を確かめる練習をしましょう。
+# 世界を見る眼鏡を、かけ直す
 
-統計の予備知識がない社会人向けの、独自に作成した非公式教材です。本書の代替や公式な要約ではありません。
+## 『FACTFULNESS』の考え方を、物語と小さな実験で学ぶ
+ニュースを読むたび、世界は悪くなっている気がする。大きな数字を見せられると、何となく納得してしまう。「今だけ」と言われると、つい急ぐ。
 
-## 学習目標
-- 思い込みに気づき、10の本能を自分の言葉で説明する。
-- ニュース・広告・グラフの比較対象、割合、変化、不確実性を確認する。
-- 判断の根拠と限界を記録し、仕事や日常へ適用する。
+そんな日常の「あ、あるある」から、10の本能をたどる日本語の自習教材です。専門知識は要りません。数字の暗記より、見方が一つ増える面白さを大切にしています。
 
-## 推奨学習順
-まず「はじめに」と基礎を読み、10の本能を順に学び、総合演習と1週間の実践へ進んでください。各章20〜30分を目安に、解答を見る前に自分の判断を書きます。
+**まずは [はじめに](00_introduction.md) から。** 一章20分ほど。途中で気になった章へ寄り道しても構いません。
 
-- [はじめに](00_introduction.md)
-- [データを見るための基礎](01_data_basics.md)
-- [分断本能](02_gap_instinct.md)
-- [ネガティブ本能](03_negativity_instinct.md)
-- [直線本能](04_straight_line_instinct.md)
-- [恐怖本能](05_fear_instinct.md)
-- [過大視本能](06_size_instinct.md)
-- [パターン化本能](07_generalization_instinct.md)
-- [宿命本能](08_destiny_instinct.md)
-- [単純化本能](09_single_perspective_instinct.md)
-- [犯人捜し本能](10_blame_instinct.md)
-- [焦り本能](11_urgency_instinct.md)
-- [総合演習](12_integrated_exercises.md)
-- [日常での実践と振り返り](13_practice_plan.md)
-- [付録・解答解説](appendix.md)
-- [参考文献・出典](references.md)
+## 読み終えたら、できるようになること
+- 世界や社会への思い込みに気づき、10の本能を自分の言葉で説明する。
+- ニュースや広告の「分母・比較対象・変化・不確実性」を確かめる。
+- 仕事や日常の判断で、別の説明や小さく試す方法を考える。
 
-## 編集・サイト生成
-Markdownが教材の原本です。Python 3で `python -m pip install -r requirements.txt`、続いて `python tools/build.py` を実行すると `docs/` にHTMLが生成されます。`python -m http.server 8000 --directory docs` で確認できます。
+## 目次
+|章|読みどころ|
+|---|---|
+|[はじめに](00_introduction.md)|世界を見る眼鏡を、かけ直す|
+|[第1章・データの基礎](01_data_basics.md)|返品の多い店は、悪い店？|
+|[第2章・分断本能](02_gap_instinct.md)|世界の真ん中が、消えてしまう|
+|[第3章・ネガティブ本能](03_negativity_instinct.md)|悪い。でも、前より良い。|
+|[第4章・直線本能](04_straight_line_instinct.md)|定規で引いた未来は、どこまで続く？|
+|[第5章・恐怖本能](05_fear_instinct.md)|怖さの大きさと、危険の大きさ|
+|[第6章・過大視本能](06_size_instinct.md)|「120万円！」の、続きの話|
+|[第7章・パターン化本能](07_generalization_instinct.md)|「あの人たちは」の、その先へ|
+|[第8章・宿命本能](08_destiny_instinct.md)|変わらないのではなく、遅いのかもしれない|
+|[第9章・単純化本能](09_single_perspective_instinct.md)|その問題、いつもの道具で解けますか|
+|[第10章・犯人捜し本能](10_blame_instinct.md)|誰が悪いかで、話を終わらせない|
+|[第11章・焦り本能](11_urgency_instinct.md)|「今すぐ」に、一呼吸を入れる|
+|[第12章・総合演習](12_integrated_exercises.md)|ニュース・広告・職場で試す|
+|[おわりに・1週間の実践](13_practice_plan.md)|学びを、いつもの習慣へ|
+|[付録と解答](appendix.md)|用語・早見表・答え合わせ|
+|[参考文献・調査範囲](references.md)|確認した資料と、解釈として補った範囲|
 
-GitHub PagesはSettings → PagesでSourceを「Deploy from a branch」、ブランチをmain、フォルダを/docsに設定すると公開できます。ビルド検証用のGitHub Actionsも同梱しています。
+推奨順は、はじめに → 基礎 → 10の本能 → 総合演習 → 1週間の実践です。解答を読む前に、自分の理由を一行だけ書いてみてください。
+
+## 本書との関係
+原作と公開情報を手がかりに、趣旨をかみ砕いて再構成した非公式教材です。原作の文章やクイズの転載ではありません。場面や演習は独自に作り、計算例には架空データを使っています。原作本文を照合できていない箇所を含むため、原作の厳密な要約としてではなく、読み進めるための案内としてお楽しみください。
+
+## 編集とサイト生成
+Markdownが原本です。Python 3で `python -m pip install -r requirements.txt`、`python tools/build.py`、`python tools/check.py` の順に実行します。`python -m http.server 8000 --directory docs` でローカル確認できます。
+
+GitHub Pagesの公開元はmainブランチの `/docs`。Markdownを更新したら、生成したHTMLも一緒にコミットしてください。GitHub Actionsは生成結果・リンク・演習の対応を検証します。

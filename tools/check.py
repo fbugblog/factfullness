@@ -33,7 +33,7 @@ for n in range(2,12):
     assert 2000 <= len(s) <=3500, (f,len(s))
     for section in ['学習目標','導入ケース','考えてみよう','基本解説','具体例','対処法','注意点','演習','章の要点']: assert section in s,(f,section)
     for suffix in ('Q','W','P'): assert f'{n}-{suffix}' in s and f'{n}-{suffix}' in appendix
-    assert '架空データ' in s
+    assert ('架空の場面' if n == 10 else '架空データ') in s, f
 for f in root.glob('*.md'):
     for link in re.findall(r'\]\(([^)]+)\)',f.read_text()):
         if not urlsplit(link).scheme: assert (root/urlsplit(link).path).is_file(),(f,link)
